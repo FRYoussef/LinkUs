@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">LinkUs</string>
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="access">Acceder</string>
+    <string name="subjects">Asignaturas</string>
+    <string name="comunications">Comunicaciones</string>
+    <string name="Broadcasting">Difusiones</string>
+    <string name="send">Enviar</string>
+    <string name="write">Escribe…</string>
+    <string name="serverDisconnected">Problemas con el servidor, desconectado</string>
+    <string name="about">Asunto…</string>
+
+    <string name="redHint">#ceda3a3a</string>
+    <string name="grayHint">#808080</string>
+
+
+    <string name="add_post">Añadir Post</string>
+    <string name="last_message">Último mensaje:</string>
+    <string name="no_info">Sin información</string>
+    <string name="messages_number">Nº respuestas:</string>
+    <string name="message">Mensaje:</string>
+    <string name="error_post_creation">No se pudo crear el post</string>
+    <string name="sadow">sombra</string>
+
+    <string name="new_post_transition">transicion nuevo post</string>
+    <string name="forum">Foro</string>
+    <string name="new_post">Nuevo Post</string>
+    <string name="server_not_found">No se ha podido conectar con el servidor, por favor, inténtelo más tarde</string>
+    <string name="retry">Reintentar</string>
+    <string name="close">Cerrar</string>
+    <string name="conexion_error">Error de conexión</string>
+    <string name="connecting">Conectando…</string>
+    <string name="log_out">Cerrar Sesión</string>
+    <string name="auto_login">Recordar sesión</string>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:transitionName="@string/new_post_transition"
+    tools:context="com.app.jose_youssef.cliente_proyecto.control.foro.NuevoPostActivity">
+
+    <include android:id="@+id/appbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="@string/about"
+        android:textSize="@dimen/subtitle_size"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/appbar" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/textView"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.5"
+        app:cardCornerRadius="@dimen/corner_radius_too_big"
+        app:contentPadding="@dimen/margin_too_tiny"
+        android:elevation="0dp">
+
+        <EditText
+            android:id="@+id/etAsunto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/write"
+            android:textColorHint="#808080"
+            android:inputType="textPersonName"/>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/message"
+        android:textSize="@dimen/subtitle_size"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv1"
+        app:layout_constraintVertical_bias="0.0"
+        app:cardCornerRadius="@dimen/corner_radius_too_big"
+        app:contentPadding="@dimen/margin_too_tiny"
+        android:elevation="0dp"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/cv1">
+
+        <EditText
+            android:id="@+id/etMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:gravity="clip_vertical"
+            android:hint="@string/write"
+            android:inputType="textMultiLine"
+            android:textColorHint="#808080"
+            android:textIsSelectable="true"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btNuevoPost"
+        android:layout_width="@dimen/fb_medium_size"
+        android:layout_height="@dimen/fb_medium_size"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorAccent"
+        android:onClick="onClickGuardaPost"
+        android:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/cv2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_send" />
+
+</android.support.constraint.ConstraintLayout>

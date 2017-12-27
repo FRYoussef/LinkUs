@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rvAsignatura"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvAsignatura"
+        android:layout_width="@dimen/item_asignatura_width"
+        android:layout_height="@dimen/item_asignatura_heigth"
+        android:layout_gravity="center"
+        app:contentPadding="@dimen/margin_tiny"
+        app:cardBackgroundColor="@color/colorAccent"
+        android:layout_marginBottom="@dimen/margin_small"
+        app:cardCornerRadius="@dimen/corner_radius_big">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="@dimen/corner_radius_big">
+
+            <TextView
+                android:id="@+id/tvAsignatura"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/no_info"
+                android:textSize="@dimen/titleSize"
+                android:textStyle="bold|italic" />
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/vSombra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/ic_sadow"
+        android:contentDescription="@string/sadow"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_big"/>
+
+
+</LinearLayout>

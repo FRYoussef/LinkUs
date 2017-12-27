@@ -1,0 +1,31 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="titleSize">25dp</dimen>
+    <dimen name="subject_size">20dp</dimen>
+    <dimen name="subject_margin">7dp</dimen>
+    <dimen name="comunication_size">20dp</dimen>
+    <dimen name="comunication_margin">7dp</dimen>
+    <dimen name="broadcast_message_size">15dp</dimen>
+    <dimen name="broadcast_margin">10dp</dimen>
+    <dimen name="broadcast_message_date_size">12dp</dimen>
+    <dimen name="broadcast_margin_bottom_up">5dp</dimen>
+    <dimen name="tam_columna">100dp</dimen>
+    <dimen name="margin_big">25dp</dimen>
+    <dimen name="margin_medium">15dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_tiny">7dp</dimen>
+    <dimen name="margin_too_tiny">4dp</dimen>
+    <dimen name="elevation_medium">6dp</dimen>
+    <dimen name="elevation_small">4dp</dimen>
+    <dimen name="corner_radius_medium">7dp</dimen>
+    <dimen name="corner_radius_big">10dp</dimen>
+    <dimen name="corner_radius_too_big">20dp</dimen>
+    <dimen name="subtitle_size">20dp</dimen>
+    <dimen name="title_size_medium">16sp</dimen>
+    <dimen name="fb_medium_size">50dp</dimen>
+    <dimen name="item_asignatura_heigth">190dp</dimen>
+    <dimen name="item_asignatura_width">250dp</dimen>
+    <dimen name="asignatura_container_size">320dp</dimen>
+</resources>

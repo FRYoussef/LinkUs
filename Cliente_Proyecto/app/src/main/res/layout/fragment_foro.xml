@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/rvPosts"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scrollbars="vertical"
+       app:layout_behavior="@string/appbar_scrolling_view_behavior"
+       android:layout_marginBottom="@dimen/margin_small"/>
+    
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fbNuevoPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/margin_big"
+        android:layout_marginRight="@dimen/margin_big"
+        android:onClick="onClickNuevoPost"
+        android:contentDescription="@string/add_post"
+        android:elevation="@dimen/elevation_medium"
+        android:src="@android:drawable/ic_input_add"
+        android:transitionName="@string/new_post_transition"
+        android:tint="@color/white"/>
+
+
+</RelativeLayout>
