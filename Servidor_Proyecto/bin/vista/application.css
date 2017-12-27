@@ -1,0 +1,27 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.principalPane{
+	-fx-background-color: #f5f5f5;
+}
+
+.paneControl{
+	-fx-background-color: #ffca28;
+	-fx-effect: dropshadow(gaussian, #bdbdbd, 5, 0.3, 2, 4);
+	-fx-background-radius: 10;
+}
+
+.button{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-width: 1;
+    -fx-background-color: #2196f3;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+}
+
+.button:hover{
+	-fx-effect: dropshadow(gaussian, #e0e0e0, 30, 0.6, 0, 0);
+	-fx-text-fill: #eeeeee;
+	-fx-font-weight: bold;
+}

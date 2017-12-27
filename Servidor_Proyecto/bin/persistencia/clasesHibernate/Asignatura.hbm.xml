@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-may-2017 17:19:02 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="persistencia.clasesHibernate.Asignatura" table="asignatura" catalog="almacendb">
+        <id name="id" type="java.lang.Integer">
+            <column name="Id" />
+            <generator class="identity" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="Nombre" length="30" unique="true" />
+        </property>
+        <set name="clientes" table="asistea" inverse="false" lazy="true" fetch="select">
+            <key>
+                <column name="IdAsignatura" not-null="true" />
+            </key>
+            <many-to-many entity-name="persistencia.clasesHibernate.Cliente">
+                <column name="IdCliente" not-null="true" />
+            </many-to-many>
+        </set>
+    </class>
+</hibernate-mapping>

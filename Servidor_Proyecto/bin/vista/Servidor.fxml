@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="337.0" prefWidth="747.0" styleClass="principalPane" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.VistaFX">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="134.0" prefWidth="200.0" styleClass="paneControl">
+         <children>
+            <Button fx:id="btArrancar" layoutY="67.0" mnemonicParsing="false" onAction="#onClickArrancar" prefHeight="25.0" prefWidth="172.0" text="Arrancar" />
+            <Button fx:id="btParar" disable="true" layoutY="101.0" mnemonicParsing="false" onAction="#onClickParar" prefHeight="25.0" prefWidth="172.0" text="Parar" />
+            <TextField fx:id="tfPuerto" alignment="CENTER" layoutX="28.0" layoutY="14.0" prefHeight="25.0" prefWidth="172.0" promptText="Numero de Puerto" styleClass="entrada" text="34123" />
+         </children>
+      </Pane>
+      <Pane layoutX="252.0" layoutY="14.0" prefHeight="217.0" prefWidth="481.0" styleClass="paneControl">
+         <children>
+            <TextArea fx:id="taMensajes" editable="false" layoutX="147.0" layoutY="15.0" prefHeight="188.0" prefWidth="320.0" promptText="Sin Información" styleClass="entrada" />
+            <Button fx:id="btLimpiar" layoutY="14.0" mnemonicParsing="false" onAction="#onClickLimpiar" prefHeight="25.0" prefWidth="123.0" text="Limpiar" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

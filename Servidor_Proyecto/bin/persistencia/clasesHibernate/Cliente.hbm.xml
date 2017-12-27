@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-may-2017 17:19:02 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="persistencia.clasesHibernate.Cliente" table="cliente" catalog="almacendb">
+        <id name="id" type="java.lang.Integer">
+            <column name="Id" />
+            <generator class="identity" />
+        </id>
+        <property name="usuario" type="string">
+            <column name="Usuario" length="15" not-null="true" unique="true" />
+        </property>
+        <property name="contrasenna" type="string">
+            <column name="Contrasenna" length="20" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="Email" length="30" not-null="true" unique="true" />
+        </property>
+        <property name="tipo" type="string">
+            <column name="Tipo" length="15" not-null="true" />
+        </property>
+        <set name="asignaturas" table="asistea" inverse="false" lazy="true" fetch="select">
+            <key>
+                <column name="IdCliente" not-null="true" />
+            </key>
+            <many-to-many entity-name="persistencia.clasesHibernate.Asignatura">
+                <column name="IdAsignatura" not-null="true" />
+            </many-to-many>
+        </set>
+        <set name="mensajes" table="tieneenbuzon" inverse="false" lazy="true" fetch="select">
+            <key>
+                <column name="IdCliente" not-null="true" />
+            </key>
+            <many-to-many entity-name="persistencia.clasesHibernate.Mensaje">
+                <column name="IdMensaje" not-null="true" />
+            </many-to-many>
+        </set>
+    </class>
+</hibernate-mapping>
