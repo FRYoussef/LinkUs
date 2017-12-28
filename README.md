@@ -8,11 +8,12 @@ Originalmente iba a disponer de los siguientes apartados:
 
 Al final solo he implementado la lista de difusión y el foro.
 
-Para que funcione hay que levantar un servidor y su base de datos. Puede usarse Xampp por ejemlo 
-y añadir la base de datos importando el script necesario (está en documentos/scriptDB.sql).
+Para que funcione hay que levantar un servidor y su base de datos.
+Puede usarse Xampp por ejemlo, y añadir la base de datos importando el script necesario,
+que está en "documentos/scriptDB.sql".
 Lo que sigue es ejecutar el .jar adjuntado, o compilar el proyecto (servidorProyecto).
-Con la aplicación hay que editar el archivo "ManejadorConexion.java" y cambiar la constante "DOMINIO" 
-por la ip de donde esté arrancado el servidor, si es en local la ip de la maquina en la que esté, si disponemos
+Para la aplicación hay que editar el archivo "ManejadorConexion.java" y cambiar la constante "DOMINIO" 
+por la ip de donde esté arrancado el servidor, si es en local la ip de la maquina en la que esté, o si disponemos
 de un dominio o un servidor remoto, podemos poner el nombre de este, por ejemplo: "www.prueba.com".
 
 #### License: GPL v3
