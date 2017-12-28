@@ -16,6 +16,10 @@ Para la aplicación hay que editar el archivo "ManejadorConexion.java" y cambiar
 por la ip de donde esté arrancado el servidor, si es en local la ip de la maquina en la que esté, o si disponemos
 de un dominio o un servidor remoto, podemos poner el nombre de este, por ejemplo: "www.prueba.com".
 
+<img src="https://user-images.githubusercontent.com/25131320/34417671-f9d3bbfc-ebf9-11e7-99e9-9e4416cd552a.png" width="250" height="400"/> <img src="https://user-images.githubusercontent.com/25131320/34417702-1752e43c-ebfa-11e7-8940-dfa84ca3d5d9.png" width="250" height="400"/></br></br>
+<img src="https://user-images.githubusercontent.com/25131320/34417676-035f233c-ebfa-11e7-8cfc-684dce41d818.png" width="250" height="400"/> <img src="https://user-images.githubusercontent.com/25131320/34417687-0cb46168-ebfa-11e7-877d-382e4f4ee99d.png" width="250" height="400"/>
+
+
 #### License: GPL v3
 #### Author:
 - Youssef El Faqir El Rhazoui
